@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fb9f4ec2720d45ae82a231dd945f741f" Name="Diagram1" >
+        <EntityTypeShape EntityType="ModeloBaseDados.Cliente" Width="1.5" PointX="0.5" PointY="2.25" />
+        <EntityTypeShape EntityType="ModeloBaseDados.Arrendamento" Width="1.5" PointX="3.5" PointY="0.75" />
+        <EntityTypeShape EntityType="ModeloBaseDados.Casa" Width="1.5" PointX="7.75" PointY="3.25" />
+        <EntityTypeShape EntityType="ModeloBaseDados.Limpeza" Width="1.5" PointX="5.25" PointY="4" />
+        <EntityTypeShape EntityType="ModeloBaseDados.Servico" Width="1.5" PointX="2.5" PointY="3.875" />
+        <EntityTypeShape EntityType="ModeloBaseDados.Venda" Width="1.5" PointX="0.625" PointY="6.875" />
+        <EntityTypeShape EntityType="ModeloBaseDados.CasaVendavel" Width="1.5" PointX="7.625" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="ModeloBaseDados.VendaCasaVendavel" />
+        <EntityTypeShape EntityType="ModeloBaseDados.CasaArrendavel" Width="1.5" PointX="7.75" PointY="1" />
+        <AssociationConnector Association="ModeloBaseDados.CasaArrendavelArrendamento" />
+        <InheritanceConnector EntityType="ModeloBaseDados.CasaArrendavel" />
+        <InheritanceConnector EntityType="ModeloBaseDados.CasaVendavel" />
+        <AssociationConnector Association="ModeloBaseDados.CasaLimpeza" />
+        <AssociationConnector Association="ModeloBaseDados.ClienteVenda" />
+        <AssociationConnector Association="ModeloBaseDados.ClienteArrendamento" />
+        <AssociationConnector Association="ModeloBaseDados.ClienteCasa" />
+        <AssociationConnector Association="ModeloBaseDados.LimpezaServico" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

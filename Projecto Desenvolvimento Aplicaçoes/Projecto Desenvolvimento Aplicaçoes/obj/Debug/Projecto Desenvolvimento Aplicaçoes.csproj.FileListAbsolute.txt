@@ -1,0 +1,164 @@
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojResolveAssemblyReference.cache
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.Cache
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojResolveAssemblyReference.cache
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.cache
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CoreCompileInputs.cache
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CopyComplete
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+C:\Users\joaod\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojResolveAssemblyReference.cache
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.Cache
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+C:\Users\2172428\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojResolveAssemblyReference.cache
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.cache
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CoreCompileInputs.cache
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CopyComplete
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+M:\Escola\Segundo Semestere\Desenvolvimento de Aplicações\Projecto\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojResolveAssemblyReference.cache
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.Cache
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+C:\Users\2170381\Desktop\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojAssemblyReference.cache
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.cache
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CoreCompileInputs.cache
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CopyComplete
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.resx
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.cs
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.Designer.cs
+D:\Escola\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Resources\house.png
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojAssemblyReference.cache
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.cache
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CoreCompileInputs.cache
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.resx
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.cs
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.Designer.cs
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Resources\house.png
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CopyComplete
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.resx
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.cs
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.Designer.cs
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Resources\house.png
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojResolveAssemblyReference.cache
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.Cache
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
