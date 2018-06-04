@@ -17,13 +17,13 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CasaArrendavel()
         {
-            this.Arrendamento = new HashSet<Arrendamento>();
+            this.Arrendamentos = new HashSet<Arrendamento>();
         }
     
         public decimal ValorBaseMes { get; set; }
         public decimal Comissao { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Arrendamento> Arrendamento { get; set; }
+        public virtual ICollection<Arrendamento> Arrendamentos { get; set; }
     }
 }

@@ -37,7 +37,7 @@
             this.btnRemoverArrendamento = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonCriarContrato = new System.Windows.Forms.Button();
-            this.comboBoxlistaClientes = new System.Windows.Forms.ComboBox();
+            this.comboBoxArrendatario = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBoxisRenovavel = new System.Windows.Forms.CheckBox();
             this.numericUpDownDuraçaoArrendamento = new System.Windows.Forms.NumericUpDown();
@@ -120,13 +120,13 @@
             this.buttonCriarContrato.Text = "Inserir";
             this.buttonCriarContrato.UseVisualStyleBackColor = true;
             // 
-            // comboBoxlistaClientes
+            // comboBoxArrendatario
             // 
-            this.comboBoxlistaClientes.FormattingEnabled = true;
-            this.comboBoxlistaClientes.Location = new System.Drawing.Point(369, 249);
-            this.comboBoxlistaClientes.Name = "comboBoxlistaClientes";
-            this.comboBoxlistaClientes.Size = new System.Drawing.Size(200, 21);
-            this.comboBoxlistaClientes.TabIndex = 16;
+            this.comboBoxArrendatario.FormattingEnabled = true;
+            this.comboBoxArrendatario.Location = new System.Drawing.Point(369, 249);
+            this.comboBoxArrendatario.Name = "comboBoxArrendatario";
+            this.comboBoxArrendatario.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxArrendatario.TabIndex = 16;
             // 
             // label4
             // 
@@ -190,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 386);
             this.Controls.Add(this.buttonCriarContrato);
-            this.Controls.Add(this.comboBoxlistaClientes);
+            this.Controls.Add(this.comboBoxArrendatario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkBoxisRenovavel);
             this.Controls.Add(this.numericUpDownDuraçaoArrendamento);
@@ -226,7 +226,7 @@
         private System.Windows.Forms.Button btnRemoverArrendamento;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonCriarContrato;
-        private System.Windows.Forms.ComboBox comboBoxlistaClientes;
+        private System.Windows.Forms.ComboBox comboBoxArrendatario;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox checkBoxisRenovavel;
         private System.Windows.Forms.NumericUpDown numericUpDownDuraçaoArrendamento;

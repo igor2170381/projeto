@@ -15,11 +15,11 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
     public partial class Arrendamento
     {
         public int IdArrendamento { get; set; }
-        public System.DateTime InicioContacto { get; set; }
+        public System.DateTime InicioContrato { get; set; }
         public int DuracaoMeses { get; set; }
         public bool Renovavel { get; set; }
     
-        public virtual Cliente Cliente { get; set; }
+        public virtual Cliente Arrendatario { get; set; }
         public virtual CasaArrendavel CasaArrendavel { get; set; }
     }
 }

@@ -17,8 +17,8 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cliente()
         {
-            this.Venda = new HashSet<Venda>();
-            this.Arrendamento = new HashSet<Arrendamento>();
+            this.Aquisicoes = new HashSet<Venda>();
+            this.Arrendamentos = new HashSet<Arrendamento>();
             this.Casas = new HashSet<Casa>();
         }
     
@@ -29,9 +29,9 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         public string Contacto { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Venda> Venda { get; set; }
+        public virtual ICollection<Venda> Aquisicoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Arrendamento> Arrendamento { get; set; }
+        public virtual ICollection<Arrendamento> Arrendamentos { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Casa> Casas { get; set; }
     }

@@ -38,8 +38,8 @@
             this.labelValorComissao = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxListaClientes = new System.Windows.Forms.ComboBox();
-            this.buttonEffetivarVenda = new System.Windows.Forms.Button();
+            this.comboBoxComprador = new System.Windows.Forms.ComboBox();
+            this.buttonEfetivarVenda = new System.Windows.Forms.Button();
             this.textBoxValorNegociado = new System.Windows.Forms.TextBox();
             this.dateTimePickerDatadaVenda = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -160,28 +160,29 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Data da Venda:";
             // 
-            // comboBoxListaClientes
+            // comboBoxComprador
             // 
-            this.comboBoxListaClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.comboBoxComprador.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxListaClientes.FormattingEnabled = true;
-            this.comboBoxListaClientes.Location = new System.Drawing.Point(79, 228);
-            this.comboBoxListaClientes.Name = "comboBoxListaClientes";
-            this.comboBoxListaClientes.Size = new System.Drawing.Size(224, 21);
-            this.comboBoxListaClientes.TabIndex = 9;
+            this.comboBoxComprador.FormattingEnabled = true;
+            this.comboBoxComprador.Location = new System.Drawing.Point(79, 228);
+            this.comboBoxComprador.Name = "comboBoxComprador";
+            this.comboBoxComprador.Size = new System.Drawing.Size(224, 21);
+            this.comboBoxComprador.TabIndex = 9;
             // 
-            // buttonEffetivarVenda
+            // buttonEfetivarVenda
             // 
-            this.buttonEffetivarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.buttonEfetivarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEffetivarVenda.Location = new System.Drawing.Point(18, 262);
-            this.buttonEffetivarVenda.Name = "buttonEffetivarVenda";
-            this.buttonEffetivarVenda.Size = new System.Drawing.Size(285, 23);
-            this.buttonEffetivarVenda.TabIndex = 10;
-            this.buttonEffetivarVenda.Text = "Efetivar Venda";
-            this.buttonEffetivarVenda.UseVisualStyleBackColor = true;
+            this.buttonEfetivarVenda.Location = new System.Drawing.Point(18, 262);
+            this.buttonEfetivarVenda.Name = "buttonEfetivarVenda";
+            this.buttonEfetivarVenda.Size = new System.Drawing.Size(285, 23);
+            this.buttonEfetivarVenda.TabIndex = 10;
+            this.buttonEfetivarVenda.Text = "Efetivar Venda";
+            this.buttonEfetivarVenda.UseVisualStyleBackColor = true;
+            this.buttonEfetivarVenda.Click += new System.EventHandler(this.buttonEfetivarVenda_Click);
             // 
             // textBoxValorNegociado
             // 
@@ -302,8 +303,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePickerDatadaVenda);
             this.Controls.Add(this.textBoxValorNegociado);
-            this.Controls.Add(this.buttonEffetivarVenda);
-            this.Controls.Add(this.comboBoxListaClientes);
+            this.Controls.Add(this.buttonEfetivarVenda);
+            this.Controls.Add(this.comboBoxComprador);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelValorComissao);
             this.Controls.Add(this.label8);
@@ -334,8 +335,8 @@
         private System.Windows.Forms.Label labelValorComissao;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBoxListaClientes;
-        private System.Windows.Forms.Button buttonEffetivarVenda;
+        private System.Windows.Forms.ComboBox comboBoxComprador;
+        private System.Windows.Forms.Button buttonEfetivarVenda;
         private System.Windows.Forms.TextBox textBoxValorNegociado;
         private System.Windows.Forms.DateTimePicker dateTimePickerDatadaVenda;
         private System.Windows.Forms.Label label3;

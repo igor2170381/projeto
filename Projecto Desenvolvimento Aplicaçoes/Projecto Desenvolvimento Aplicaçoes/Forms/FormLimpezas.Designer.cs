@@ -41,8 +41,8 @@
             this.comboBoxTipoDeServiço = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonEmitirFatura = new System.Windows.Forms.Button();
-            this.dateTimePickerDataFatura = new System.Windows.Forms.DateTimePicker();
-            this.buttonCriarFatura = new System.Windows.Forms.Button();
+            this.dateTimePickerDataLimpeza = new System.Windows.Forms.DateTimePicker();
+            this.buttonCriarLimpezas = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantidadeLimpezas)).BeginInit();
@@ -163,22 +163,24 @@
             this.buttonEmitirFatura.TabIndex = 3;
             this.buttonEmitirFatura.Text = "Emitir Fatura";
             this.buttonEmitirFatura.UseVisualStyleBackColor = true;
+            this.buttonEmitirFatura.Click += new System.EventHandler(this.buttonEmitirFatura_Click);
             // 
-            // dateTimePickerDataFatura
+            // dateTimePickerDataLimpeza
             // 
-            this.dateTimePickerDataFatura.Location = new System.Drawing.Point(12, 456);
-            this.dateTimePickerDataFatura.Name = "dateTimePickerDataFatura";
-            this.dateTimePickerDataFatura.Size = new System.Drawing.Size(163, 20);
-            this.dateTimePickerDataFatura.TabIndex = 4;
+            this.dateTimePickerDataLimpeza.Location = new System.Drawing.Point(12, 456);
+            this.dateTimePickerDataLimpeza.Name = "dateTimePickerDataLimpeza";
+            this.dateTimePickerDataLimpeza.Size = new System.Drawing.Size(163, 20);
+            this.dateTimePickerDataLimpeza.TabIndex = 4;
             // 
-            // buttonCriarFatura
+            // buttonCriarLimpezas
             // 
-            this.buttonCriarFatura.Location = new System.Drawing.Point(181, 453);
-            this.buttonCriarFatura.Name = "buttonCriarFatura";
-            this.buttonCriarFatura.Size = new System.Drawing.Size(77, 23);
-            this.buttonCriarFatura.TabIndex = 5;
-            this.buttonCriarFatura.Text = "Criar";
-            this.buttonCriarFatura.UseVisualStyleBackColor = true;
+            this.buttonCriarLimpezas.Location = new System.Drawing.Point(181, 453);
+            this.buttonCriarLimpezas.Name = "buttonCriarLimpezas";
+            this.buttonCriarLimpezas.Size = new System.Drawing.Size(77, 23);
+            this.buttonCriarLimpezas.TabIndex = 5;
+            this.buttonCriarLimpezas.Text = "Criar";
+            this.buttonCriarLimpezas.UseVisualStyleBackColor = true;
+            this.buttonCriarLimpezas.Click += new System.EventHandler(this.buttonCriarLimpezas_Click);
             // 
             // pictureBox1
             // 
@@ -196,8 +198,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 489);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.buttonCriarFatura);
-            this.Controls.Add(this.dateTimePickerDataFatura);
+            this.Controls.Add(this.buttonCriarLimpezas);
+            this.Controls.Add(this.dateTimePickerDataLimpeza);
             this.Controls.Add(this.buttonEmitirFatura);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBoxListaLimpezas);
@@ -230,8 +232,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listBoxDetalhesLimpeza;
         private System.Windows.Forms.Button buttonEmitirFatura;
-        private System.Windows.Forms.DateTimePicker dateTimePickerDataFatura;
-        private System.Windows.Forms.Button buttonCriarFatura;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDataLimpeza;
+        private System.Windows.Forms.Button buttonCriarLimpezas;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

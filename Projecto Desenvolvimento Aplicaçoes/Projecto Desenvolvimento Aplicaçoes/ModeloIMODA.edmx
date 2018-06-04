@@ -68,7 +68,7 @@
     <Property Name="ValorNegociado" Type="decimal" Nullable="false" />
     <Property Name="ComissaoNegociada" Type="decimal" Nullable="false" />
     <Property Name="CasaVendavel_IdCasa" Type="int" Nullable="false" />
-    <Property Name="Cliente_IdCliente" Type="int" Nullable="false" />
+    <Property Name="Comprador_IdCliente" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Clientes">
     <Key>
@@ -85,10 +85,10 @@
       <PropertyRef Name="IdArrendamento" />
     </Key>
     <Property Name="IdArrendamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="InicioContacto" Type="datetime" Nullable="false" />
+    <Property Name="InicioContrato" Type="datetime" Nullable="false" />
     <Property Name="DuracaoMeses" Type="int" Nullable="false" />
     <Property Name="Renovavel" Type="bit" Nullable="false" />
-    <Property Name="Cliente_IdCliente" Type="int" Nullable="false" />
+    <Property Name="Arrendatario_IdCliente" Type="int" Nullable="false" />
     <Property Name="CasaArrendavel_IdCasa" Type="int" Nullable="true" />
   </EntityType>
   <EntityType Name="Casas">
@@ -105,7 +105,7 @@
     <Property Name="NumeroWC" Type="int" Nullable="false" />
     <Property Name="NumeroPisos" Type="int" Nullable="false" />
     <Property Name="Tipo" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Cliente_IdCliente" Type="int" Nullable="false" />
+    <Property Name="Proprietario_IdCliente" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Servicos">
     <Key>
@@ -177,7 +177,7 @@
         <PropertyRef Name="IdCliente" />
       </Principal>
       <Dependent Role="Venda">
-        <PropertyRef Name="Cliente_IdCliente" />
+        <PropertyRef Name="Comprador_IdCliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -189,7 +189,7 @@
         <PropertyRef Name="IdCliente" />
       </Principal>
       <Dependent Role="Arrendamento">
-        <PropertyRef Name="Cliente_IdCliente" />
+        <PropertyRef Name="Arrendatario_IdCliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -201,7 +201,7 @@
         <PropertyRef Name="IdCliente" />
       </Principal>
       <Dependent Role="Casa">
-        <PropertyRef Name="Cliente_IdCliente" />
+        <PropertyRef Name="Proprietario_IdCliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -292,7 +292,7 @@
           <Property Name="IdLimpeza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Data" Type="DateTime" Nullable="false" />
           <NavigationProperty Name="Casa" Relationship="ModeloIMODA.CasaLimpeza" FromRole="Limpeza" ToRole="Casa" />
-          <NavigationProperty Name="Servico" Relationship="ModeloIMODA.LimpezaServico" FromRole="Limpeza" ToRole="Servico" />
+          <NavigationProperty Name="Servicos" Relationship="ModeloIMODA.LimpezaServico" FromRole="Limpeza" ToRole="Servico" />
         </EntityType>
         <EntityType Name="CasaVendavel" BaseType="ModeloIMODA.Casa">
           <Property Name="ValorBaseVenda" Type="Decimal" Nullable="false" />
@@ -308,7 +308,7 @@
           <Property Name="ValorNegociado" Type="Decimal" Nullable="false" />
           <Property Name="ComissaoNegociada" Type="Decimal" Nullable="false" />
           <NavigationProperty Name="CasaVendavel" Relationship="ModeloIMODA.VendaCasaVendavel" FromRole="Venda" ToRole="CasaVendavel" />
-          <NavigationProperty Name="Cliente" Relationship="ModeloIMODA.ClienteVenda" FromRole="Venda" ToRole="Cliente" />
+          <NavigationProperty Name="Comprador" Relationship="ModeloIMODA.ClienteVenda" FromRole="Venda" ToRole="Cliente" />
         </EntityType>
         <EntityType Name="Cliente">
           <Key>
@@ -319,8 +319,8 @@
           <Property Name="NIF" Type="String" Nullable="false" />
           <Property Name="Morada" Type="String" Nullable="false" />
           <Property Name="Contacto" Type="String" Nullable="false" />
-          <NavigationProperty Name="Venda" Relationship="ModeloIMODA.ClienteVenda" FromRole="Cliente" ToRole="Venda" />
-          <NavigationProperty Name="Arrendamento" Relationship="ModeloIMODA.ClienteArrendamento" FromRole="Cliente" ToRole="Arrendamento" />
+          <NavigationProperty Name="Aquisicoes" Relationship="ModeloIMODA.ClienteVenda" FromRole="Cliente" ToRole="Venda" />
+          <NavigationProperty Name="Arrendamentos" Relationship="ModeloIMODA.ClienteArrendamento" FromRole="Cliente" ToRole="Arrendamento" />
           <NavigationProperty Name="Casas" Relationship="ModeloIMODA.ClienteCasa" FromRole="Cliente" ToRole="Casa" />
         </EntityType>
         <EntityType Name="Arrendamento">
@@ -328,10 +328,10 @@
             <PropertyRef Name="IdArrendamento" />
           </Key>
           <Property Name="IdArrendamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="InicioContacto" Type="DateTime" Nullable="false" />
+          <Property Name="InicioContrato" Type="DateTime" Nullable="false" />
           <Property Name="DuracaoMeses" Type="Int32" Nullable="false" />
           <Property Name="Renovavel" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="Cliente" Relationship="ModeloIMODA.ClienteArrendamento" FromRole="Arrendamento" ToRole="Cliente" />
+          <NavigationProperty Name="Arrendatario" Relationship="ModeloIMODA.ClienteArrendamento" FromRole="Arrendamento" ToRole="Cliente" />
           <NavigationProperty Name="CasaArrendavel" Relationship="ModeloIMODA.CasaArrendavelArrendamento" FromRole="Arrendamento" ToRole="CasaArrendavel" />
         </EntityType>
         <EntityType Name="Casa">
@@ -348,13 +348,13 @@
           <Property Name="NumeroWC" Type="Int32" Nullable="false" />
           <Property Name="NumeroPisos" Type="Int32" Nullable="false" />
           <Property Name="Tipo" Type="String" Nullable="false" />
-          <NavigationProperty Name="Limpeza" Relationship="ModeloIMODA.CasaLimpeza" FromRole="Casa" ToRole="Limpeza" />
-          <NavigationProperty Name="Cliente" Relationship="ModeloIMODA.ClienteCasa" FromRole="Casa" ToRole="Cliente" />
+          <NavigationProperty Name="Limpezas" Relationship="ModeloIMODA.CasaLimpeza" FromRole="Casa" ToRole="Limpeza" />
+          <NavigationProperty Name="Proprietario" Relationship="ModeloIMODA.ClienteCasa" FromRole="Casa" ToRole="Cliente" />
         </EntityType>
         <EntityType Name="CasaArrendavel" BaseType="ModeloIMODA.Casa">
           <Property Name="ValorBaseMes" Type="Decimal" Nullable="false" />
           <Property Name="Comissao" Type="Decimal" Nullable="false" />
-          <NavigationProperty Name="Arrendamento" Relationship="ModeloIMODA.CasaArrendavelArrendamento" FromRole="CasaArrendavel" ToRole="Arrendamento" />
+          <NavigationProperty Name="Arrendamentos" Relationship="ModeloIMODA.CasaArrendavelArrendamento" FromRole="CasaArrendavel" ToRole="Arrendamento" />
         </EntityType>
         <EntityType Name="Servico">
           <Key>
@@ -433,7 +433,7 @@
       <EntityTypeMapping TypeName="IsTypeOf(ModeloIMODA.Arrendamento)">
         <MappingFragment StoreEntitySet="Arrendamentos">
           <ScalarProperty Name="IdArrendamento" ColumnName="IdArrendamento" />
-          <ScalarProperty Name="InicioContacto" ColumnName="InicioContacto" />
+          <ScalarProperty Name="InicioContrato" ColumnName="InicioContrato" />
           <ScalarProperty Name="DuracaoMeses" ColumnName="DuracaoMeses" />
           <ScalarProperty Name="Renovavel" ColumnName="Renovavel" />
         </MappingFragment>
@@ -507,7 +507,7 @@
     </AssociationSetMapping>
     <AssociationSetMapping Name="ClienteVenda" TypeName="ModeloIMODA.ClienteVenda" StoreEntitySet="Vendas">
       <EndProperty Name="Cliente">
-        <ScalarProperty Name="IdCliente" ColumnName="Cliente_IdCliente" />
+        <ScalarProperty Name="IdCliente" ColumnName="Comprador_IdCliente" />
       </EndProperty>
       <EndProperty Name="Venda">
         <ScalarProperty Name="IdVenda" ColumnName="IdVenda" />
@@ -515,7 +515,7 @@
     </AssociationSetMapping>
     <AssociationSetMapping Name="ClienteArrendamento" TypeName="ModeloIMODA.ClienteArrendamento" StoreEntitySet="Arrendamentos">
       <EndProperty Name="Cliente">
-        <ScalarProperty Name="IdCliente" ColumnName="Cliente_IdCliente" />
+        <ScalarProperty Name="IdCliente" ColumnName="Arrendatario_IdCliente" />
       </EndProperty>
       <EndProperty Name="Arrendamento">
         <ScalarProperty Name="IdArrendamento" ColumnName="IdArrendamento" />
@@ -523,7 +523,7 @@
     </AssociationSetMapping>
     <AssociationSetMapping Name="ClienteCasa" TypeName="ModeloIMODA.ClienteCasa" StoreEntitySet="Casas">
       <EndProperty Name="Cliente">
-        <ScalarProperty Name="IdCliente" ColumnName="Cliente_IdCliente" />
+        <ScalarProperty Name="IdCliente" ColumnName="Proprietario_IdCliente" />
       </EndProperty>
       <EndProperty Name="Casa">
         <ScalarProperty Name="IdCasa" ColumnName="IdCasa" />

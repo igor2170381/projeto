@@ -63,7 +63,7 @@
     <Property Name="ValorNegociado" Type="decimal" Nullable="false" />
     <Property Name="ComissaoNegociada" Type="decimal" Nullable="false" />
     <Property Name="CasaVendavel_IdCasa" Type="int" Nullable="false" />
-    <Property Name="Cliente_IdCliente" Type="int" Nullable="false" />
+    <Property Name="Comprador_IdCliente" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Clientes">
     <Key>
@@ -80,10 +80,10 @@
       <PropertyRef Name="IdArrendamento" />
     </Key>
     <Property Name="IdArrendamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="InicioContacto" Type="datetime" Nullable="false" />
+    <Property Name="InicioContrato" Type="datetime" Nullable="false" />
     <Property Name="DuracaoMeses" Type="int" Nullable="false" />
     <Property Name="Renovavel" Type="bit" Nullable="false" />
-    <Property Name="Cliente_IdCliente" Type="int" Nullable="false" />
+    <Property Name="Arrendatario_IdCliente" Type="int" Nullable="false" />
     <Property Name="CasaArrendavel_IdCasa" Type="int" Nullable="true" />
   </EntityType>
   <EntityType Name="Casas">
@@ -100,7 +100,7 @@
     <Property Name="NumeroWC" Type="int" Nullable="false" />
     <Property Name="NumeroPisos" Type="int" Nullable="false" />
     <Property Name="Tipo" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Cliente_IdCliente" Type="int" Nullable="false" />
+    <Property Name="Proprietario_IdCliente" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Servicos">
     <Key>
@@ -172,7 +172,7 @@
         <PropertyRef Name="IdCliente" />
       </Principal>
       <Dependent Role="Venda">
-        <PropertyRef Name="Cliente_IdCliente" />
+        <PropertyRef Name="Comprador_IdCliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -184,7 +184,7 @@
         <PropertyRef Name="IdCliente" />
       </Principal>
       <Dependent Role="Arrendamento">
-        <PropertyRef Name="Cliente_IdCliente" />
+        <PropertyRef Name="Arrendatario_IdCliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -196,7 +196,7 @@
         <PropertyRef Name="IdCliente" />
       </Principal>
       <Dependent Role="Casa">
-        <PropertyRef Name="Cliente_IdCliente" />
+        <PropertyRef Name="Proprietario_IdCliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

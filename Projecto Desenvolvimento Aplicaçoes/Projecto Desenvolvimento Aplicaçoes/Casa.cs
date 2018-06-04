@@ -17,7 +17,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Casa()
         {
-            this.Limpeza = new HashSet<Limpeza>();
+            this.Limpezas = new HashSet<Limpeza>();
         }
     
         public int IdCasa { get; set; }
@@ -32,7 +32,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         public string Tipo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Limpeza> Limpeza { get; set; }
-        public virtual Cliente Cliente { get; set; }
+        public virtual ICollection<Limpeza> Limpezas { get; set; }
+        public virtual Cliente Proprietario { get; set; }
     }
 }

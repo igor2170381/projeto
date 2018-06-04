@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projecto_Desenvolvimento_Aplicaçoes.Classes;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
@@ -17,15 +18,22 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
             this.context = context;
 
-            DataGridViewCasa.DataSource = context.Casas.ToList();
+            (from Casa in context.Casas
+             orderby Casa.Localidade
+             select Casa).Load();
 
+            DataGridViewCasa.DataSource = context.Casas.ToList();
+            DataGridViewCasa.AutoGenerateColumns = false;
             comboBoxProprietárioDaCasa.DataSource = context.Clientes.ToList();
             comboBoxProprietárioDaCasa.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            groupBoxArrendamento.Enabled = false;
+            groupBoxVenda.Enabled = false;
         }
 
         private void buttonGerirLimpezas_Click(object sender, EventArgs e)
         {
-            FormLimpezas FormLimpezas = new FormLimpezas(context);
+            FormLimpezas FormLimpezas = new FormLimpezas(context, (Casa)DataGridViewCasa.CurrentRow.DataBoundItem);
             FormLimpezas.ShowDialog();
         }
 
@@ -63,113 +71,144 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
         private void buttonNovaCasa_Click(object sender, EventArgs e)
         {
-            buttonNovaCasa.Text = "Cancelar";
+            
+            if(buttonNovaCasa.Text == "Nova")
+            {
+                DataGridViewCasa.CurrentCell = DataGridViewCasa.Rows[DataGridViewCasa.Rows.Count - 1].Cells[0];
 
-            DataGridViewCasa.CurrentCell = DataGridViewCasa.Rows[DataGridViewCasa.Rows.Count - 1].Cells[0];
+                textBoxLocalidadeCasa.Text = null;
+                textBoxRuaCasa.Text = null;
+                textBoxAndarCasa.Text = null;
+                textBoxNumeroCasa.Text = null;
 
-            textBoxLocalidadeCasa.Text = null;
-            textBoxRuaCasa.Text = null;
-            textBoxAndarCasa.Text = null;
-            textBoxNumeroCasa.Text = null;
+                checkBoxArrendavel.Checked = false;
+                checkBoxArrendavel.Enabled = true;
+                checkBoxVendavel.Checked = false;
+                checkBoxVendavel.Enabled = true;
 
-            checkBoxArrendavel.Checked = false;
-            checkBoxArrendavel.Enabled = true;
-            groupBoxArrendamento.Enabled = false;
+                if (checkBoxArrendavel.Checked == false && checkBoxVendavel.Checked == false)
+                {
+                    groupBoxArrendamento.Enabled = false;
+                    groupBoxVenda.Enabled = false;
+                }
 
-            checkBoxVendavel.Checked = false;
-            checkBoxVendavel.Enabled = true;
-            groupBoxArrendamento.Enabled = false;
+                numericUpDownAreaDaCasa.Value = 0;
+                numericUpDownAssoalhadasDaCasa.Value = 0;
+                numericUpDownWCDaCasa.Value = 0;
+                numericUpDownPisosDaCasa.Value = 0;
 
-            numericUpDownAreaDaCasa.Value = 0;
-            numericUpDownAssoalhadasDaCasa.Value = 0;
-            numericUpDownWCDaCasa.Value = 0;
-            numericUpDownPisosDaCasa.Value = 0;
+                textBoxComissaoArrendamento.Text = null;
+                textBoxComissãoBaseVenda.Text = null;
+                textBoxValorBaseArrendamento.Text = null;
+                textBoxValorBaseVenda.Text = null;
 
-            textBoxComissaoArrendamento.Text = null;
-            textBoxComissãoBaseVenda.Text = null;
-            textBoxValorBaseArrendamento.Text = null;
-            textBoxValorBaseVenda.Text = null;
+                DataGridViewCasa.Enabled = false;
 
-            DataGridViewCasa.Enabled = false;
+                buttonNovaCasa.Text = "Cancelar";
+                buttonApagarCasa.Enabled = false;
+                buttonGerirLimpezas.Enabled = false;
+            }
+            else
+            {
+                DataGridViewCasa.CurrentCell = DataGridViewCasa.Rows[DataGridViewCasa.Rows.Count - 1].Cells[0];
+                DataGridViewCasa.DataSource = context.Casas.ToList();
+                DataGridViewCasa.Enabled = true;
+                buttonNovaCasa.Text = "Nova";
+                buttonApagarCasa.Enabled = true;
+                buttonGerirLimpezas.Enabled = true;
+            }
+            
+
         }
 
         private void buttonGuardarDetalhes_Click(object sender, EventArgs e)
         {
-            if (checkBoxArrendavel.Checked == true)
+            bool IsValid = Utilities.ValidateString(textBoxLocalidadeCasa.Text, true)
+                           && Utilities.ValidateString(textBoxRuaCasa.Text, true)
+                           && Utilities.ValidateInt(textBoxAndarCasa.Text,20)
+                           && Utilities.ValidateInt(textBoxNumeroCasa.Text, 1000);
+
+            if (IsValid)
             {
-
-                CasaArrendavel casaArrendavel = new CasaArrendavel
+                if (checkBoxArrendavel.Checked == true)
                 {
-                    Localidade = textBoxLocalidadeCasa.Text,
-                    Rua = textBoxRuaCasa.Text,
-                    Numero = Int32.Parse(textBoxNumeroCasa.Text),
-                    Andar = Int32.Parse(textBoxAndarCasa.Text),
-                    Area = numericUpDownAreaDaCasa.Value,
-                    NumeroAssoalhadas = Decimal.ToInt32(numericUpDownAssoalhadasDaCasa.Value),
-                    NumeroWC = Decimal.ToInt32(numericUpDownWCDaCasa.Value),
-                    NumeroPisos = Decimal.ToInt32(numericUpDownPisosDaCasa.Value),
-                    Tipo = comboBoxTipoDeCasa.SelectedItem.ToString(),
-                    Cliente = (Cliente)comboBoxProprietárioDaCasa.SelectedItem,
-                    ValorBaseMes = int.Parse(textBoxValorBaseArrendamento.Text),
-                    Comissao = int.Parse(textBoxComissaoArrendamento.Text),   
-                };
+                    CasaArrendavel casaArrendavel = new CasaArrendavel
+                    {
+                        Localidade = textBoxLocalidadeCasa.Text,
+                        Rua = textBoxRuaCasa.Text,
+                        Numero = Int32.Parse(textBoxNumeroCasa.Text),
+                        Andar = Int32.Parse(textBoxAndarCasa.Text),
+                        Area = numericUpDownAreaDaCasa.Value,
+                        NumeroAssoalhadas = Decimal.ToInt32(numericUpDownAssoalhadasDaCasa.Value),
+                        NumeroWC = Decimal.ToInt32(numericUpDownWCDaCasa.Value),
+                        NumeroPisos = Decimal.ToInt32(numericUpDownPisosDaCasa.Value),
+                        Tipo = comboBoxTipoDeCasa.SelectedItem.ToString(),
+                        Proprietario = (Cliente)comboBoxProprietárioDaCasa.SelectedItem,
+                        ValorBaseMes = int.Parse(textBoxValorBaseArrendamento.Text),
+                        Comissao = int.Parse(textBoxComissaoArrendamento.Text),
+                    };
 
-                context.Casas.Add(casaArrendavel);
-                context.SaveChanges();
-                buttonNovaCasa.Text = "Novo";
-                DataGridViewCasa.DataSource = null;
-                DataGridViewCasa.DataSource = context.Casas.ToList();
-                DataGridViewCasa.Enabled = true;
-            }
-            else if (checkBoxVendavel.Checked == true)
-            {
-                
-                CasaVendavel casaVendavel = new CasaVendavel
+                    context.Casas.Add(casaArrendavel);
+                    context.SaveChanges();
+                    buttonNovaCasa.Text = "Novo";
+                    DataGridViewCasa.DataSource = context.Casas.ToList();
+                    DataGridViewCasa.Enabled = true;
+                    MessageBox.Show("Casa Arrendável criada", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (checkBoxVendavel.Checked == true)
                 {
-                    Localidade = textBoxLocalidadeCasa.Text,
-                    Rua = textBoxRuaCasa.Text,
-                    Numero = Int32.Parse(textBoxNumeroCasa.Text),
-                    Andar = Int32.Parse(textBoxAndarCasa.Text),
-                    Area = numericUpDownAreaDaCasa.Value,
-                    NumeroAssoalhadas = Decimal.ToInt32(numericUpDownAssoalhadasDaCasa.Value),
-                    NumeroWC = Decimal.ToInt32(numericUpDownWCDaCasa.Value),
-                    NumeroPisos = Decimal.ToInt32(numericUpDownPisosDaCasa.Value),
-                    Tipo = comboBoxTipoDeCasa.SelectedItem.ToString(),
-                    Cliente = (Cliente)comboBoxProprietárioDaCasa.SelectedItem,
-                    ValorBaseVenda = int.Parse(textBoxValorBaseVenda.Text),
-                    ValorComissao = int.Parse(textBoxComissãoBaseVenda.Text)
-                };
-                
-                context.Casas.Add(casaVendavel);
-                context.SaveChanges();
-                buttonNovaCasa.Text = "Novo";
-                DataGridViewCasa.DataSource = null;
-                DataGridViewCasa.DataSource = context.Casas.ToList();
-                DataGridViewCasa.Enabled = true;
 
+                    CasaVendavel casaVendavel = new CasaVendavel
+                    {
+                        Localidade = textBoxLocalidadeCasa.Text,
+                        Rua = textBoxRuaCasa.Text,
+                        Numero = Int32.Parse(textBoxNumeroCasa.Text),
+                        Andar = Int32.Parse(textBoxAndarCasa.Text),
+                        Area = numericUpDownAreaDaCasa.Value,
+                        NumeroAssoalhadas = Decimal.ToInt32(numericUpDownAssoalhadasDaCasa.Value),
+                        NumeroWC = Decimal.ToInt32(numericUpDownWCDaCasa.Value),
+                        NumeroPisos = Decimal.ToInt32(numericUpDownPisosDaCasa.Value),
+                        Tipo = comboBoxTipoDeCasa.SelectedItem.ToString(),
+                        Proprietario = (Cliente)comboBoxProprietárioDaCasa.SelectedItem,
+                        ValorBaseVenda = int.Parse(textBoxValorBaseVenda.Text),
+                        ValorComissao = int.Parse(textBoxComissãoBaseVenda.Text)
+                    };
+
+                    context.Casas.Add(casaVendavel);
+                    context.SaveChanges();
+                    buttonNovaCasa.Text = "Novo";
+                    DataGridViewCasa.DataSource = context.Casas.ToList();
+                    DataGridViewCasa.Enabled = true;
+                    MessageBox.Show("Casa vendável criada", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    Casa novaCasa = new Casa
+                    {
+                        Localidade = textBoxLocalidadeCasa.Text,
+                        Rua = textBoxRuaCasa.Text,
+                        Numero = Int32.Parse(textBoxNumeroCasa.Text),
+                        Andar = Int32.Parse(textBoxAndarCasa.Text),
+                        Area = numericUpDownAreaDaCasa.Value,
+                        NumeroAssoalhadas = Decimal.ToInt32(numericUpDownAssoalhadasDaCasa.Value),
+                        NumeroWC = Decimal.ToInt32(numericUpDownWCDaCasa.Value),
+                        NumeroPisos = Decimal.ToInt32(numericUpDownPisosDaCasa.Value),
+                        Tipo = comboBoxTipoDeCasa.Text,
+                        Proprietario = (Cliente)comboBoxProprietárioDaCasa.SelectedItem
+                    };
+
+                    context.Casas.Add(novaCasa);
+                    context.SaveChanges();
+                    buttonNovaCasa.Text = "Novo";
+                    DataGridViewCasa.DataSource = context.Casas.ToList();
+                    DataGridViewCasa.Enabled = true;
+                    MessageBox.Show("Casa criada", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
-                Casa novaCasas = new Casa
-                {
-                    Localidade = textBoxLocalidadeCasa.Text,
-                    Rua = textBoxRuaCasa.Text,
-                    Numero = Int32.Parse(textBoxNumeroCasa.Text),
-                    Andar = Int32.Parse(textBoxAndarCasa.Text),
-                    Area = numericUpDownAreaDaCasa.Value,
-                    NumeroAssoalhadas = Decimal.ToInt32(numericUpDownAssoalhadasDaCasa.Value),
-                    NumeroWC = Decimal.ToInt32(numericUpDownWCDaCasa.Value),
-                    NumeroPisos = Decimal.ToInt32(numericUpDownPisosDaCasa.Value),
-                    Tipo = comboBoxTipoDeCasa.Text,
-                    Cliente = (Cliente)comboBoxProprietárioDaCasa.SelectedItem
-                };
-
-                context.Casas.Add(novaCasas);
-                context.SaveChanges();
-                buttonNovaCasa.Text = "Novo";
-                DataGridViewCasa.DataSource = null;
-                DataGridViewCasa.DataSource = context.Casas.ToList();
-                DataGridViewCasa.Enabled = true;
+                MessageBox.Show("Verifique os valores introduzidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
@@ -179,7 +218,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             if (DataGridViewCasa.CurrentRow.DataBoundItem.GetType().BaseType == typeof(CasaArrendavel))
             {
                 CasaArrendavel casaarrendavelselecionada = (CasaArrendavel)DataGridViewCasa.CurrentRow.DataBoundItem;
-                textBoxValorBaseArrendamento.Text = null;
+                textBoxValorBaseVenda.Text = null;
                 textBoxComissãoBaseVenda.Text = null;
 
                 checkBoxVendavel.Enabled = false;
@@ -196,8 +235,8 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
                 numericUpDownPisosDaCasa.Text = casaarrendavelselecionada.NumeroPisos.ToString();
                 numericUpDownWCDaCasa.Text = casaarrendavelselecionada.NumeroWC.ToString();
                 comboBoxTipoDeCasa.Text = casaarrendavelselecionada.Tipo.ToString();
+                textBoxValorBaseArrendamento.Text = casaarrendavelselecionada.ValorBaseMes.ToString();
                 textBoxComissaoArrendamento.Text = casaarrendavelselecionada.Comissao.ToString();
-                textBoxComissãoBaseVenda.Text = casaarrendavelselecionada.ValorBaseMes.ToString();
             }
             else if (DataGridViewCasa.CurrentRow.DataBoundItem.GetType().BaseType == typeof(CasaVendavel))
             {
@@ -247,6 +286,31 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
                 comboBoxTipoDeCasa.Text = casaselecionada.Tipo.ToString();
 
             }
+        }
+
+        private void buttonApagarCasa_Click(object sender, EventArgs e)
+        {
+            if(DataGridViewCasa.CurrentRow.DataBoundItem == null)
+            {
+                Casa casaSelecionada = (Casa)DataGridViewCasa.CurrentRow.DataBoundItem;
+                context.Casas.Remove(casaSelecionada);
+                context.SaveChanges();
+
+                buttonNovaCasa.Enabled = true;
+            }
+            
+        }
+
+        private void buttonVerVenda_Click(object sender, EventArgs e)
+        {
+            FormVenda_de_Casa FormVendaDeCasa = new FormVenda_de_Casa(context, (CasaVendavel)DataGridViewCasa.CurrentRow.DataBoundItem);
+            FormVendaDeCasa.ShowDialog();
+        }
+
+        private void buttonVerECriarArrendamento_Click(object sender, EventArgs e)
+        {
+            FormArrendamentos FormArrendamentos = new FormArrendamentos(context, (CasaArrendavel)DataGridViewCasa.CurrentRow.DataBoundItem);
+            FormArrendamentos.ShowDialog();
         }
     }
 }

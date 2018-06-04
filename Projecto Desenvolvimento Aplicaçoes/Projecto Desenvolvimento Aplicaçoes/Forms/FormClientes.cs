@@ -25,6 +25,8 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             BindingSourceCliente.DataSource = context.Clientes.Local.ToBindingList();
             DataGridViewCliente.AutoGenerateColumns = false;
 
+            buttonFiltrar.Enabled = false;
+
             //Mostra primeiro index da combobox ao inicar
             comboBoxParametroDeFiltro.SelectedIndex = 0;
 
@@ -33,60 +35,77 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             //    buttonCriarCliente.Enabled = false;
             //}
          
-            if (DataGridViewCliente.DataSource == null)
-            {
-                buttonGuardarDadosCliente.Enabled = false;
-                textBoxNIFCliente.Enabled = false;
-                textBoxNomeCliente.Enabled = false;
-                textBoxMoradaCliente.Enabled = false;
-                textBoxContactoCliente.Enabled = false;
-                buttonFiltrar.Enabled = false;
-                buttonApagarCliente.Enabled = false;
-            }
-            else
-            {
-                buttonGuardarDadosCliente.Enabled = true;
-                textBoxNIFCliente.Enabled = true;
-                textBoxNomeCliente.Enabled = true;
-                textBoxMoradaCliente.Enabled = true;
-                textBoxContactoCliente.Enabled = true;
-                buttonFiltrar.Enabled = true;
-                buttonApagarCliente.Enabled = true;
-            }
+            //if (DataGridViewCliente.DataSource == null)
+            //{
+            //    buttonGuardarDadosCliente.Enabled = true;
+            //    textBoxNIFCliente.Enabled = true;
+            //    textBoxNomeCliente.Enabled = true;
+            //    textBoxMoradaCliente.Enabled = true;
+            //    textBoxContactoCliente.Enabled = true;
+            //    textBoxCampoDeFiltro.Enabled = true;
+            //    buttonFiltrar.Enabled = true;
+            //    buttonApagarCliente.Enabled = true;
+            //}
+            //else
+            //{
+            //    buttonGuardarDadosCliente.Enabled = false;
+            //    textBoxNIFCliente.Enabled = false;
+            //    textBoxNomeCliente.Enabled = false;
+            //    textBoxMoradaCliente.Enabled = false;
+            //    textBoxContactoCliente.Enabled = false;
+            //    textBoxCampoDeFiltro.Enabled = false;
+            //    buttonFiltrar.Enabled = false;
+            //    buttonApagarCliente.Enabled = false;
+
+                
+            //}
   
         }
 
         private void buttonCriarCliente_Click(object sender, EventArgs e)
         {
-
-            textBoxNIFCliente.Text = null;
-            textBoxNomeCliente.Text = null;
-            textBoxMoradaCliente.Text = null;
-            textBoxContactoCliente.Text = null;
-
-            textBoxNIFCliente.Enabled = true;
-            textBoxNomeCliente.Enabled = true;
-            textBoxMoradaCliente.Enabled = true;
-            textBoxContactoCliente.Enabled = true;
- 
-            textBoxCampoDeFiltro.Enabled = false;
-
-            DataGridViewCliente.Enabled = false;
-
-            Cliente novoCliente = new Cliente
+            if (buttonCriarCliente.Text == "Novo")
             {
-                //NIF = textBoxNIFCliente.Text,
-                //Nome = textBoxNomeCliente.Text,
-                //Morada = textBoxMoradaCliente.Text,
-                //Contacto = textBoxContactoCliente.Text
-            };
+                textBoxNIFCliente.Text = null;
+                textBoxNomeCliente.Text = null;
+                textBoxMoradaCliente.Text = null;
+                textBoxContactoCliente.Text = null;
 
-            context.Clientes.Add(novoCliente);
+                textBoxNIFCliente.Enabled = true;
+                textBoxNomeCliente.Enabled = true;
+                textBoxMoradaCliente.Enabled = true;
+                textBoxContactoCliente.Enabled = true;
 
-            DataGridViewCliente.CurrentCell = DataGridViewCliente.Rows[DataGridViewCliente.Rows.Count - 1].Cells[0];
+                textBoxCampoDeFiltro.Enabled = false;
 
-            buttonCriarCliente.Enabled = false;
-            buttonGuardarDadosCliente.Enabled = true;
+                DataGridViewCliente.Enabled = false;
+
+                Cliente novoCliente = new Cliente
+                {
+                    //NIF = textBoxNIFCliente.Text,
+                    //Nome = textBoxNomeCliente.Text,
+                    //Morada = textBoxMoradaCliente.Text,
+                    //Contacto = textBoxContactoCliente.Text
+                };
+
+                context.Clientes.Add(novoCliente);
+
+                DataGridViewCliente.CurrentCell = DataGridViewCliente.Rows[DataGridViewCliente.Rows.Count - 1].Cells[0];
+
+                //buttonCriarCliente.Enabled = false;
+                buttonGuardarDadosCliente.Enabled = true;
+                buttonApagarCliente.Enabled = false;
+                buttonCriarCliente.Text = "Cancelar";
+            }
+            else
+            {
+                buttonCriarCliente.Text = "Novo";
+                buttonApagarCliente.Enabled = true;
+                DataGridViewCliente.Enabled = true;
+                //*remover campo  vazio
+                Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
+                context.Clientes.Remove(clienteSelecionado);
+            }
         }
 
         private void buttonGuardarDadosCliente_Click(object sender, EventArgs e)
@@ -107,13 +126,13 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             }
             else
             {
-                MessageBox.Show("Nao foi possivel criar um novo cliente, verifique a informaçao introduzida e tente novamente", "Erro",
+                MessageBox.Show("Verifique os valores introduzidos", "Erro",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 
             DataGridViewCliente.Enabled = true;
-            textBoxCampoDeFiltro.Enabled = false;
+            textBoxCampoDeFiltro.Enabled = true;
         }
 
         //bloquear botao novo quando se esta a editar textboxes
@@ -127,8 +146,8 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             }
             else
             {
-                Cliente clienteselecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
-                context.Clientes.Remove(clienteselecionado);
+                Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
+                context.Clientes.Remove(clienteSelecionado);
                 context.SaveChanges();
 
                 buttonCriarCliente.Enabled = true;
@@ -195,6 +214,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             if (textBoxCampoDeFiltro.TextLength != 0)
             {
                 buttonFiltrar.Enabled = true;
+                buttonCriarCliente.Enabled = false;
             }
 
             if (textBoxCampoDeFiltro.TextLength == 0)
@@ -208,7 +228,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
                 buttonApagarCliente.Enabled = true;
                 buttonGuardarDadosCliente.Enabled = true;
                 buttonCriarCliente.Enabled = true;
-                buttonFiltrar.Enabled = true;
+                buttonFiltrar.Enabled = false;
             }
         }
 
@@ -237,7 +257,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
                 CasaArrendavel casaSelecionada = (CasaArrendavel)listBoxListaCasas.SelectedItem;
 
-                listBoxListaArrendamentos.DataSource = casaSelecionada.Arrendamento.ToList();
+                listBoxListaArrendamentos.DataSource = casaSelecionada.Arrendamentos.ToList();
                 listBoxListaAquisicoes.DataSource = null;
             }
 
@@ -255,13 +275,13 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
         private void listBoxListaArrendamentos_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            FormArrendamentos FormArrendamentos = new FormArrendamentos(context);
+            FormArrendamentos FormArrendamentos = new FormArrendamentos(context, (CasaArrendavel)listBoxListaArrendamentos.SelectedItem);
             FormArrendamentos.ShowDialog();
         }
 
         private void listBoxListaAquisicoes_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            FormVenda_de_Casa FormVendaDeCasa = new FormVenda_de_Casa(context);
+            FormVenda_de_Casa FormVendaDeCasa = new FormVenda_de_Casa(context, (CasaVendavel)listBoxListaAquisicoes.SelectedItem);
             FormVendaDeCasa.ShowDialog();
         }
         

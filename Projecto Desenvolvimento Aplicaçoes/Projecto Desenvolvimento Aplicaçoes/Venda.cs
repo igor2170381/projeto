@@ -20,6 +20,6 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         public decimal ComissaoNegociada { get; set; }
     
         public virtual CasaVendavel CasaVendavel { get; set; }
-        public virtual Cliente Cliente { get; set; }
+        public virtual Cliente Comprador { get; set; }
     }
 }

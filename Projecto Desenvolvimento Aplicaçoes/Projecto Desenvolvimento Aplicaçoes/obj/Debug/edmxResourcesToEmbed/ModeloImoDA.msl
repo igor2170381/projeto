@@ -34,7 +34,7 @@
       <EntityTypeMapping TypeName="IsTypeOf(ModeloIMODA.Arrendamento)">
         <MappingFragment StoreEntitySet="Arrendamentos">
           <ScalarProperty Name="IdArrendamento" ColumnName="IdArrendamento" />
-          <ScalarProperty Name="InicioContacto" ColumnName="InicioContacto" />
+          <ScalarProperty Name="InicioContrato" ColumnName="InicioContrato" />
           <ScalarProperty Name="DuracaoMeses" ColumnName="DuracaoMeses" />
           <ScalarProperty Name="Renovavel" ColumnName="Renovavel" />
         </MappingFragment>
@@ -108,7 +108,7 @@
     </AssociationSetMapping>
     <AssociationSetMapping Name="ClienteVenda" TypeName="ModeloIMODA.ClienteVenda" StoreEntitySet="Vendas">
       <EndProperty Name="Cliente">
-        <ScalarProperty Name="IdCliente" ColumnName="Cliente_IdCliente" />
+        <ScalarProperty Name="IdCliente" ColumnName="Comprador_IdCliente" />
       </EndProperty>
       <EndProperty Name="Venda">
         <ScalarProperty Name="IdVenda" ColumnName="IdVenda" />
@@ -116,7 +116,7 @@
     </AssociationSetMapping>
     <AssociationSetMapping Name="ClienteArrendamento" TypeName="ModeloIMODA.ClienteArrendamento" StoreEntitySet="Arrendamentos">
       <EndProperty Name="Cliente">
-        <ScalarProperty Name="IdCliente" ColumnName="Cliente_IdCliente" />
+        <ScalarProperty Name="IdCliente" ColumnName="Arrendatario_IdCliente" />
       </EndProperty>
       <EndProperty Name="Arrendamento">
         <ScalarProperty Name="IdArrendamento" ColumnName="IdArrendamento" />
@@ -124,7 +124,7 @@
     </AssociationSetMapping>
     <AssociationSetMapping Name="ClienteCasa" TypeName="ModeloIMODA.ClienteCasa" StoreEntitySet="Casas">
       <EndProperty Name="Cliente">
-        <ScalarProperty Name="IdCliente" ColumnName="Cliente_IdCliente" />
+        <ScalarProperty Name="IdCliente" ColumnName="Proprietario_IdCliente" />
       </EndProperty>
       <EndProperty Name="Casa">
         <ScalarProperty Name="IdCasa" ColumnName="IdCasa" />

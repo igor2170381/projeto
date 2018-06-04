@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 05/29/2018 13:13:27
--- Generated from EDMX file: D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\ModeloIMODA.edmx
+-- Date Created: 06/04/2018 11:36:05
+-- Generated from EDMX file: D:\IPL - ESTG\1º Ano\2º Semestre\Desenvolvimento de Aplicações\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\ModeloIMODA.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -93,7 +93,7 @@ CREATE TABLE [dbo].[Vendas] (
     [ValorNegociado] decimal(18,0)  NOT NULL,
     [ComissaoNegociada] decimal(18,0)  NOT NULL,
     [CasaVendavel_IdCasa] int  NOT NULL,
-    [Cliente_IdCliente] int  NOT NULL
+    [Comprador_IdCliente] int  NOT NULL
 );
 GO
 
@@ -110,10 +110,10 @@ GO
 -- Creating table 'Arrendamentos'
 CREATE TABLE [dbo].[Arrendamentos] (
     [IdArrendamento] int IDENTITY(1,1) NOT NULL,
-    [InicioContacto] datetime  NOT NULL,
+    [InicioContrato] datetime  NOT NULL,
     [DuracaoMeses] int  NOT NULL,
     [Renovavel] bit  NOT NULL,
-    [Cliente_IdCliente] int  NOT NULL,
+    [Arrendatario_IdCliente] int  NOT NULL,
     [CasaArrendavel_IdCasa] int  NULL
 );
 GO
@@ -130,7 +130,7 @@ CREATE TABLE [dbo].[Casas] (
     [NumeroWC] int  NOT NULL,
     [NumeroPisos] int  NOT NULL,
     [Tipo] nvarchar(max)  NOT NULL,
-    [Cliente_IdCliente] int  NOT NULL
+    [Proprietario_IdCliente] int  NOT NULL
 );
 GO
 
@@ -261,10 +261,10 @@ ON [dbo].[Vendas]
     ([CasaVendavel_IdCasa]);
 GO
 
--- Creating foreign key on [Cliente_IdCliente] in table 'Vendas'
+-- Creating foreign key on [Comprador_IdCliente] in table 'Vendas'
 ALTER TABLE [dbo].[Vendas]
 ADD CONSTRAINT [FK_ClienteVenda]
-    FOREIGN KEY ([Cliente_IdCliente])
+    FOREIGN KEY ([Comprador_IdCliente])
     REFERENCES [dbo].[Clientes]
         ([IdCliente])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
@@ -273,13 +273,13 @@ GO
 -- Creating non-clustered index for FOREIGN KEY 'FK_ClienteVenda'
 CREATE INDEX [IX_FK_ClienteVenda]
 ON [dbo].[Vendas]
-    ([Cliente_IdCliente]);
+    ([Comprador_IdCliente]);
 GO
 
--- Creating foreign key on [Cliente_IdCliente] in table 'Arrendamentos'
+-- Creating foreign key on [Arrendatario_IdCliente] in table 'Arrendamentos'
 ALTER TABLE [dbo].[Arrendamentos]
 ADD CONSTRAINT [FK_ClienteArrendamento]
-    FOREIGN KEY ([Cliente_IdCliente])
+    FOREIGN KEY ([Arrendatario_IdCliente])
     REFERENCES [dbo].[Clientes]
         ([IdCliente])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
@@ -288,13 +288,13 @@ GO
 -- Creating non-clustered index for FOREIGN KEY 'FK_ClienteArrendamento'
 CREATE INDEX [IX_FK_ClienteArrendamento]
 ON [dbo].[Arrendamentos]
-    ([Cliente_IdCliente]);
+    ([Arrendatario_IdCliente]);
 GO
 
--- Creating foreign key on [Cliente_IdCliente] in table 'Casas'
+-- Creating foreign key on [Proprietario_IdCliente] in table 'Casas'
 ALTER TABLE [dbo].[Casas]
 ADD CONSTRAINT [FK_ClienteCasa]
-    FOREIGN KEY ([Cliente_IdCliente])
+    FOREIGN KEY ([Proprietario_IdCliente])
     REFERENCES [dbo].[Clientes]
         ([IdCliente])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
@@ -303,7 +303,7 @@ GO
 -- Creating non-clustered index for FOREIGN KEY 'FK_ClienteCasa'
 CREATE INDEX [IX_FK_ClienteCasa]
 ON [dbo].[Casas]
-    ([Cliente_IdCliente]);
+    ([Proprietario_IdCliente]);
 GO
 
 -- Creating foreign key on [CasaArrendavel_IdCasa] in table 'Arrendamentos'

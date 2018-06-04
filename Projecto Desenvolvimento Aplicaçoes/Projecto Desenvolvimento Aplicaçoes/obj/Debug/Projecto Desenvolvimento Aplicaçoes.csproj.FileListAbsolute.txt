@@ -162,3 +162,27 @@ D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj
 D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.Cache
 D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
 D:\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.resx
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.cs
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Forms\FormCasas.Designer.cs
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Resources\house.png
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe.config
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\Projecto Desenvolvimento Aplicaçoes.pdb
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.dll
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.dll
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.xml
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\bin\Debug\EntityFramework.SqlServer.xml
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csprojAssemblyReference.cache
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormArrendamentos.resources
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormCasas.resources
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormClientes.resources
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Form1.resources
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormLimpezas.resources
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.resources
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto_Desenvolvimento_Aplicaçoes.FormVenda_de_Casa.resources
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.GenerateResource.cache
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CoreCompileInputs.cache
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.csproj.CopyComplete
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.exe
+D:\GIT\projeto.git\Projecto Desenvolvimento Aplicaçoes\Projecto Desenvolvimento Aplicaçoes\obj\Debug\Projecto Desenvolvimento Aplicaçoes.pdb

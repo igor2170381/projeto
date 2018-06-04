@@ -64,7 +64,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.numericUpDownAreaDaCasa = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblIDCasa = new System.Windows.Forms.Label();
+            this.labelIDCasa = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxAndarCasa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -110,7 +110,7 @@
             this.groupBoxDetalhesCasa.Controls.Add(this.label7);
             this.groupBoxDetalhesCasa.Controls.Add(this.numericUpDownAreaDaCasa);
             this.groupBoxDetalhesCasa.Controls.Add(this.label6);
-            this.groupBoxDetalhesCasa.Controls.Add(this.lblIDCasa);
+            this.groupBoxDetalhesCasa.Controls.Add(this.labelIDCasa);
             this.groupBoxDetalhesCasa.Controls.Add(this.label5);
             this.groupBoxDetalhesCasa.Controls.Add(this.textBoxAndarCasa);
             this.groupBoxDetalhesCasa.Controls.Add(this.label4);
@@ -160,6 +160,7 @@
             this.buttonVerVenda.TabIndex = 13;
             this.buttonVerVenda.Text = "Ver";
             this.buttonVerVenda.UseVisualStyleBackColor = true;
+            this.buttonVerVenda.Click += new System.EventHandler(this.buttonVerVenda_Click);
             // 
             // label16
             // 
@@ -235,6 +236,7 @@
             this.buttonVerECriarArrendamento.TabIndex = 6;
             this.buttonVerECriarArrendamento.Text = "Ver/Criar";
             this.buttonVerECriarArrendamento.UseVisualStyleBackColor = true;
+            this.buttonVerECriarArrendamento.Click += new System.EventHandler(this.buttonVerECriarArrendamento_Click);
             // 
             // label14
             // 
@@ -359,7 +361,8 @@
             // 
             this.comboBoxTipoDeCasa.FormattingEnabled = true;
             this.comboBoxTipoDeCasa.Items.AddRange(new object[] {
-            "Moradia"});
+            "Moradia",
+            "Apartamento"});
             this.comboBoxTipoDeCasa.Location = new System.Drawing.Point(91, 254);
             this.comboBoxTipoDeCasa.Name = "comboBoxTipoDeCasa";
             this.comboBoxTipoDeCasa.Size = new System.Drawing.Size(254, 21);
@@ -377,6 +380,11 @@
             // numericUpDownPisosDaCasa
             // 
             this.numericUpDownPisosDaCasa.Location = new System.Drawing.Point(91, 224);
+            this.numericUpDownPisosDaCasa.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.numericUpDownPisosDaCasa.Name = "numericUpDownPisosDaCasa";
             this.numericUpDownPisosDaCasa.Size = new System.Drawing.Size(151, 20);
             this.numericUpDownPisosDaCasa.TabIndex = 18;
@@ -393,6 +401,11 @@
             // numericUpDownWCDaCasa
             // 
             this.numericUpDownWCDaCasa.Location = new System.Drawing.Point(91, 198);
+            this.numericUpDownWCDaCasa.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.numericUpDownWCDaCasa.Name = "numericUpDownWCDaCasa";
             this.numericUpDownWCDaCasa.Size = new System.Drawing.Size(151, 20);
             this.numericUpDownWCDaCasa.TabIndex = 16;
@@ -409,6 +422,11 @@
             // numericUpDownAssoalhadasDaCasa
             // 
             this.numericUpDownAssoalhadasDaCasa.Location = new System.Drawing.Point(91, 172);
+            this.numericUpDownAssoalhadasDaCasa.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.numericUpDownAssoalhadasDaCasa.Name = "numericUpDownAssoalhadasDaCasa";
             this.numericUpDownAssoalhadasDaCasa.Size = new System.Drawing.Size(151, 20);
             this.numericUpDownAssoalhadasDaCasa.TabIndex = 14;
@@ -425,6 +443,11 @@
             // numericUpDownAreaDaCasa
             // 
             this.numericUpDownAreaDaCasa.Location = new System.Drawing.Point(91, 146);
+            this.numericUpDownAreaDaCasa.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.numericUpDownAreaDaCasa.Name = "numericUpDownAreaDaCasa";
             this.numericUpDownAreaDaCasa.Size = new System.Drawing.Size(151, 20);
             this.numericUpDownAreaDaCasa.TabIndex = 12;
@@ -438,13 +461,13 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Area: ";
             // 
-            // lblIDCasa
+            // labelIDCasa
             // 
-            this.lblIDCasa.AutoSize = true;
-            this.lblIDCasa.Location = new System.Drawing.Point(91, 21);
-            this.lblIDCasa.Name = "lblIDCasa";
-            this.lblIDCasa.Size = new System.Drawing.Size(0, 13);
-            this.lblIDCasa.TabIndex = 10;
+            this.labelIDCasa.AutoSize = true;
+            this.labelIDCasa.Location = new System.Drawing.Point(91, 21);
+            this.labelIDCasa.Name = "labelIDCasa";
+            this.labelIDCasa.Size = new System.Drawing.Size(0, 13);
+            this.labelIDCasa.TabIndex = 10;
             // 
             // label5
             // 
@@ -527,6 +550,7 @@
             this.buttonApagarCasa.TabIndex = 1;
             this.buttonApagarCasa.Text = "Apagar";
             this.buttonApagarCasa.UseVisualStyleBackColor = true;
+            this.buttonApagarCasa.Click += new System.EventHandler(this.buttonApagarCasa_Click);
             // 
             // pictureBox1
             // 
@@ -584,7 +608,7 @@
         private System.Windows.Forms.GroupBox groupBoxDetalhesCasa;
         private System.Windows.Forms.NumericUpDown numericUpDownAreaDaCasa;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblIDCasa;
+        private System.Windows.Forms.Label labelIDCasa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxAndarCasa;
         private System.Windows.Forms.Label label4;
