@@ -1,6 +1,11 @@
 ﻿namespace Projecto_Desenvolvimento_Aplicaçoes
 {
-    partial class Servico
+    public partial class Servico
     {
+
+        public override string ToString()
+        {
+            return Valor + Unidades + "x" + "(" +Descricao +")";
+        }
     }
 }

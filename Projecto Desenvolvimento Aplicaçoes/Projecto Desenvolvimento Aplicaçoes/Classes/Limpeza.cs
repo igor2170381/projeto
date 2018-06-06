@@ -1,6 +1,13 @@
 ﻿namespace Projecto_Desenvolvimento_Aplicaçoes
 {
-    partial class Limpeza
+    public partial class Limpeza
     {
+
+        public override string ToString()
+        {
+
+            return "€ a:" + Data;
+
+        }
     }
 }

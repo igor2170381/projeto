@@ -80,31 +80,38 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
                 DataGridViewCliente.Enabled = false;
 
+                listBoxListaCasas.DataSource = null;
+                listBoxListaArrendamentos.DataSource = null;
+                listBoxListaAquisicoes.DataSource = null;
+
                 Cliente novoCliente = new Cliente
                 {
-                    //NIF = textBoxNIFCliente.Text,
-                    //Nome = textBoxNomeCliente.Text,
-                    //Morada = textBoxMoradaCliente.Text,
-                    //Contacto = textBoxContactoCliente.Text
                 };
 
                 context.Clientes.Add(novoCliente);
 
                 DataGridViewCliente.CurrentCell = DataGridViewCliente.Rows[DataGridViewCliente.Rows.Count - 1].Cells[0];
 
-                //buttonCriarCliente.Enabled = false;
                 buttonGuardarDadosCliente.Enabled = true;
                 buttonApagarCliente.Enabled = false;
                 buttonCriarCliente.Text = "Cancelar";
+                Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
+                listBoxListaCasas.DataSource = clienteSelecionado.Casas.ToList();
+                listBoxListaArrendamentos.DataSource = clienteSelecionado.Arrendamentos.ToList();
+                listBoxListaAquisicoes.DataSource = clienteSelecionado.Aquisicoes.ToList();
             }
             else
             {
                 buttonCriarCliente.Text = "Novo";
                 buttonApagarCliente.Enabled = true;
                 DataGridViewCliente.Enabled = true;
-                //*remover campo  vazio
+                textBoxCampoDeFiltro.Enabled = true;
+                //remover campo  vazio
                 Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
                 context.Clientes.Remove(clienteSelecionado);
+                listBoxListaCasas.DataSource = clienteSelecionado.Casas.ToList();
+                listBoxListaArrendamentos.DataSource = clienteSelecionado.Arrendamentos.ToList();
+                listBoxListaAquisicoes.DataSource = clienteSelecionado.Aquisicoes.ToList();
             }
         }
 
@@ -117,12 +124,31 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
             if (IsValid)
             {
+                if (buttonCriarCliente.Text == "Cancelar")
+                {
+                    context.SaveChanges();
+                    MessageBox.Show("Cliente gravado com sucesso", "Sucesso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                context.SaveChanges();
-                MessageBox.Show("Cliente gravado com sucesso", "Success",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    buttonCriarCliente.Enabled = true;
+                    buttonCriarCliente.Text = "Novo";
+                    Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
+                    listBoxListaCasas.DataSource = clienteSelecionado.Casas.ToList();
+                    listBoxListaArrendamentos.DataSource = clienteSelecionado.Arrendamentos.ToList();
+                    listBoxListaAquisicoes.DataSource = clienteSelecionado.Aquisicoes.ToList();
+                }
+                else
+                {
+                    context.SaveChanges();
+                    MessageBox.Show("Cliente editado com sucesso", "Sucesso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                buttonCriarCliente.Enabled = true;
+                    buttonCriarCliente.Enabled = true;
+                    Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
+                    listBoxListaCasas.DataSource = clienteSelecionado.Casas.ToList();
+                    listBoxListaArrendamentos.DataSource = clienteSelecionado.Arrendamentos.ToList();
+                    listBoxListaAquisicoes.DataSource = clienteSelecionado.Aquisicoes.ToList();
+                }
             }
             else
             {
@@ -133,6 +159,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
             DataGridViewCliente.Enabled = true;
             textBoxCampoDeFiltro.Enabled = true;
+            buttonApagarCliente.Enabled = true;
         }
 
         //bloquear botao novo quando se esta a editar textboxes
@@ -147,10 +174,18 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             else
             {
                 Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
-                context.Clientes.Remove(clienteSelecionado);
-                context.SaveChanges();
-
-                buttonCriarCliente.Enabled = true;
+                if (clienteSelecionado.Aquisicoes.Count == 0 && clienteSelecionado.Arrendamentos.Count == 0 && clienteSelecionado.Casas.Count == 0)
+                {
+                    context.Clientes.Remove(clienteSelecionado);
+                    context.SaveChanges();
+                    BindingSourceCliente.DataSource = context.Clientes.Local.ToBindingList();
+                    MessageBox.Show("Cliente criado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Não pode apagar um cliente com casas", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
         }
@@ -176,7 +211,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             {
                 case "Nome":
                     IEnumerable<Cliente> resultadoPesquisaNome = from Cliente in context.Clientes
-                                                                 where Cliente.Nome == campoFiltro
+                                                                 where Cliente.Nome.Contains(campoFiltro) 
                                                                  select Cliente;
 
                     DataGridViewCliente.DataSource = resultadoPesquisaNome.ToList();
@@ -185,7 +220,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
                 case "NIF":
                     IEnumerable<Cliente> resultadoPesquisaNIF = from Cliente in context.Clientes
-                                                                where Cliente.NIF == campoFiltro
+                                                                where Cliente.NIF.Contains(campoFiltro)
                                                                 select Cliente;
 
                     DataGridViewCliente.DataSource = resultadoPesquisaNIF.ToList();
@@ -193,7 +228,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
                 case "Contacto":
                     IEnumerable<Cliente> resultadoPesquisaContacto = from Cliente in context.Clientes
-                                                                     where Cliente.Contacto == campoFiltro
+                                                                     where Cliente.Contacto.Contains(campoFiltro)
                                                                      select Cliente;
 
                     DataGridViewCliente.DataSource = resultadoPesquisaContacto.ToList();
@@ -201,7 +236,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
                 case "Morada":
                     IEnumerable<Cliente> resultadoPesquisaMorada = from Cliente in context.Clientes
-                                                                   where Cliente.Morada == campoFiltro
+                                                                   where Cliente.Morada.Contains(campoFiltro)
                                                                    select Cliente;
 
                     DataGridViewCliente.DataSource = resultadoPesquisaMorada.ToList();
@@ -235,36 +270,31 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         private void DataGridViewCliente_SelectionChanged(object sender, EventArgs e)
         {
             Cliente clienteSelecionado = (Cliente)DataGridViewCliente.CurrentRow.DataBoundItem;
-            listBoxListaCasas.DataSource = clienteSelecionado.Casas.ToList();
-        }
-
-        private void listBoxListaCasas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBoxListaCasas.SelectedItem.GetType().BaseType == typeof(CasaVendavel))
+            if (clienteSelecionado.Casas != null)
             {
-                if (context.Vendas.ToList().Count != 0)
-                {
-                    CasaVendavel casaSelecionada = (CasaVendavel)listBoxListaCasas.SelectedItem;
-
-                    listBoxListaAquisicoes.DataSource = casaSelecionada.Venda.ToString();
-                    listBoxListaArrendamentos.DataSource = null;
-
-                }
+                listBoxListaCasas.DataSource = clienteSelecionado.Casas.ToList();
+            }
+            else
+            {
+                listBoxListaCasas.DataSource = null;
+                listBoxListaAquisicoes.DataSource = null;
                 listBoxListaArrendamentos.DataSource = null;
             }
-            else if (listBoxListaCasas.SelectedItem.GetType().BaseType == typeof(CasaArrendavel))
+
+            if (clienteSelecionado.Aquisicoes != null)
             {
-
-                CasaArrendavel casaSelecionada = (CasaArrendavel)listBoxListaCasas.SelectedItem;
-
-                listBoxListaArrendamentos.DataSource = casaSelecionada.Arrendamentos.ToList();
-                listBoxListaAquisicoes.DataSource = null;
+                listBoxListaAquisicoes.DataSource = clienteSelecionado.Aquisicoes.ToList();
             }
 
-            else if (listBoxListaCasas.SelectedItem.GetType().BaseType == typeof(Casa))
+            if (clienteSelecionado.Arrendamentos != null)
+            {
+                listBoxListaArrendamentos.DataSource = clienteSelecionado.Arrendamentos.ToList();
+            }
+            else
             {
                 listBoxListaArrendamentos.DataSource = null;
                 listBoxListaAquisicoes.DataSource = null;
+                listBoxListaCasas.DataSource = null;
             }
         }
         private void listBoxListaCasas_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -284,6 +314,5 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             FormVenda_de_Casa FormVendaDeCasa = new FormVenda_de_Casa(context, (CasaVendavel)listBoxListaAquisicoes.SelectedItem);
             FormVendaDeCasa.ShowDialog();
         }
-        
     }
 }

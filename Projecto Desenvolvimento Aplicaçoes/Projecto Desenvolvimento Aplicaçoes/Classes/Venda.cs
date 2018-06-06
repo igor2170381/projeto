@@ -1,6 +1,10 @@
 ﻿namespace Projecto_Desenvolvimento_Aplicaçoes
 {
-    partial class Venda
+    public partial class Venda
     {
+        public override string ToString()
+        {
+            return string.Concat(this.CasaVendavel.Localidade + "("+CasaVendavel.IdCasa+")" + " a " + DataVenda.ToShortDateString());
+        }
     }
 }

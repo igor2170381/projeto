@@ -18,8 +18,8 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             comboBoxComprador.DataSource = context.Clientes.ToList();
 
             labelProprietário.Text = casaSelecionada.Proprietario.ToString();
-            labelValorBaseVenda.Text = casaSelecionada.ValorBaseVenda.ToString();
-            labelValorComissao.Text = casaSelecionada.ValorComissao.ToString();
+            labelValorBaseVenda.Text = casaSelecionada.ValorBaseVenda.ToString() + " €";
+            labelValorComissao.Text = casaSelecionada.ValorComissao.ToString() + " €";
 
 
             if (casaSelecionada.Venda == null)
@@ -69,6 +69,8 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
                 comboBoxComprador.Enabled = false;
                 buttonEfetivarVenda.Enabled = false;
                 labelEstadoDeVenda.Text = "Vendida";
+                MessageBox.Show("Venda efetuada com sucesso", "Sucesso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
 

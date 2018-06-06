@@ -544,7 +544,7 @@
             // 
             // buttonApagarCasa
             // 
-            this.buttonApagarCasa.Location = new System.Drawing.Point(12, 631);
+            this.buttonApagarCasa.Location = new System.Drawing.Point(8, 631);
             this.buttonApagarCasa.Name = "buttonApagarCasa";
             this.buttonApagarCasa.Size = new System.Drawing.Size(310, 23);
             this.buttonApagarCasa.TabIndex = 1;

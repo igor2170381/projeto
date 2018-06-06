@@ -33,9 +33,36 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
                 CasaArrendavel = casaSelecionada
             };
 
-            context.Arrendamentos.Add(novoArrendamento);
-            context.SaveChanges();
-            listBoxListaArrendamentos.DataSource = casaSelecionada.Arrendamentos.ToList();
+            if (comboBoxArrendatario.SelectedItem.ToString() == labelDonoCasa.Text)
+            {
+                MessageBox.Show("O proprietário não pode arrendar a sua própria casa", "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                context.Arrendamentos.Add(novoArrendamento);
+                context.SaveChanges();
+                listBoxListaArrendamentos.DataSource = casaSelecionada.Arrendamentos.ToList();
+                MessageBox.Show("Arrendamento efetuado com sucesso", "Sucesso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+        }
+
+        private void btnRemoverArrendamento_Click(object sender, System.EventArgs e)
+        {
+            Arrendamento arrendamentoSelecionado = (Arrendamento)listBoxListaArrendamentos.SelectedItem;
+            if(arrendamentoSelecionado.CasaArrendavel != null)
+            {
+                MessageBox.Show("Não pode apagar um arrendamento", "Erro",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                context.Arrendamentos.Remove(arrendamentoSelecionado);
+                context.SaveChanges();
+                listBoxListaArrendamentos.DataSource = casaSelecionada.Arrendamentos.ToList();
+            }
         }
     }
 }

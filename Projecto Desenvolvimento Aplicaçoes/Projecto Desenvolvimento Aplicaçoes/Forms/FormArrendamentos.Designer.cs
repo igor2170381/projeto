@@ -100,6 +100,7 @@
             this.btnRemoverArrendamento.TabIndex = 5;
             this.btnRemoverArrendamento.Text = "Remover";
             this.btnRemoverArrendamento.UseVisualStyleBackColor = true;
+            this.btnRemoverArrendamento.Click += new System.EventHandler(this.btnRemoverArrendamento_Click);
             // 
             // pictureBox1
             // 
@@ -119,6 +120,7 @@
             this.buttonCriarContrato.TabIndex = 17;
             this.buttonCriarContrato.Text = "Inserir";
             this.buttonCriarContrato.UseVisualStyleBackColor = true;
+            this.buttonCriarContrato.Click += new System.EventHandler(this.buttonCriarContrato_Click);
             // 
             // comboBoxArrendatario
             // 

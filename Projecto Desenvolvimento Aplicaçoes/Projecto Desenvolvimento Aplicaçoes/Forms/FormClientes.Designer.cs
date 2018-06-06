@@ -53,10 +53,10 @@
             this.buttonGuardarDadosCliente = new System.Windows.Forms.Button();
             this.buttonApagarCliente = new System.Windows.Forms.Button();
             this.DataGridViewCliente = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             contactoLabel = new System.Windows.Forms.Label();
             moradaLabel = new System.Windows.Forms.Label();
             nIFLabel = new System.Windows.Forms.Label();
@@ -245,7 +245,6 @@
             this.listBoxListaCasas.Name = "listBoxListaCasas";
             this.listBoxListaCasas.Size = new System.Drawing.Size(266, 82);
             this.listBoxListaCasas.TabIndex = 11;
-            this.listBoxListaCasas.SelectedIndexChanged += new System.EventHandler(this.listBoxListaCasas_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -309,17 +308,6 @@
             this.DataGridViewCliente.TabIndex = 7;
             this.DataGridViewCliente.SelectionChanged += new System.EventHandler(this.DataGridViewCliente_SelectionChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.person_icon_1680;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(565, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // nomeDataGridViewTextBoxColumn
             // 
             this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
@@ -340,6 +328,17 @@
             this.moradaDataGridViewTextBoxColumn.HeaderText = "Morada";
             this.moradaDataGridViewTextBoxColumn.Name = "moradaDataGridViewTextBoxColumn";
             this.moradaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Projecto_Desenvolvimento_Aplicaçoes.Properties.Resources.person_icon_1680;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(565, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(101, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // FormClientes
             // 

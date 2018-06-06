@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -17,7 +18,7 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
         {
             InitializeComponent();
             this.context = context;
-
+            comboBoxTipoDeServiço.DropDownStyle = ComboBoxStyle.DropDownList;
             this.casaselecionada = casaselecionada;
 
             listBoxListaLimpezas.DataSource = casaselecionada.Limpezas.ToList();
@@ -41,7 +42,6 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
             
             context.Limpezas.Add(novalimpeza);
             context.SaveChanges();
-
             listBoxListaLimpezas.DataSource = casaselecionada.Limpezas.ToList();
 
         }
@@ -69,11 +69,10 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
         private void comboBoxTipoDeServiço_SelectedIndexChanged(object sender, EventArgs e)
         {
-                
             switch (comboBoxTipoDeServiço.SelectedIndex)
             {
                 case 0:
-                    valorunitario = 10 ;
+                    valorunitario = 10;
                     break;
 
                 case 1:
@@ -111,7 +110,30 @@ namespace Projecto_Desenvolvimento_Aplicaçoes
 
         private void buttonEmitirFatura_Click(object sender, EventArgs e)
         {
+            Limpeza limpezaSelecionada = (Limpeza)listBoxListaLimpezas.SelectedItem;
 
+            saveFileDialogFicheiroTexto.FileName = limpezaSelecionada.IdLimpeza + "_" + casaselecionada.Localidade + ".txt";
+
+            if (saveFileDialogFicheiroTexto.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+
+            StreamWriter ficheiro = new StreamWriter(saveFileDialogFicheiroTexto.FileName);
+
+            ficheiro.WriteLine(casaselecionada.Proprietario.ToString());
+            ficheiro.WriteLine("___________Fatura Simplificada___________");
+            ficheiro.WriteLine("Data da Limpeza: " + limpezaSelecionada.Data.ToString());
+            
+
+            for (int i = 0; i < limpezaSelecionada.Servicos.Count; i++)
+            {
+                ficheiro.WriteLine("___________Serviços___________");
+            }
+
+            ficheiro.Close();
+
+            MessageBox.Show("Fatura Emitida", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

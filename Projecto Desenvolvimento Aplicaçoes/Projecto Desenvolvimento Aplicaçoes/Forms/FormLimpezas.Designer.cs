@@ -44,6 +44,7 @@
             this.dateTimePickerDataLimpeza = new System.Windows.Forms.DateTimePicker();
             this.buttonCriarLimpezas = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.saveFileDialogFicheiroTexto = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantidadeLimpezas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -116,6 +117,7 @@
             this.buttonInserirLimpezas.TabIndex = 4;
             this.buttonInserirLimpezas.Text = "Inserir";
             this.buttonInserirLimpezas.UseVisualStyleBackColor = true;
+            this.buttonInserirLimpezas.Click += new System.EventHandler(this.buttonInserirLimpezas_Click);
             // 
             // numericUpDownQuantidadeLimpezas
             // 
@@ -145,6 +147,8 @@
             this.comboBoxTipoDeServiço.Name = "comboBoxTipoDeServiço";
             this.comboBoxTipoDeServiço.Size = new System.Drawing.Size(197, 21);
             this.comboBoxTipoDeServiço.TabIndex = 1;
+            this.comboBoxTipoDeServiço.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipoDeServiço_SelectedIndexChanged);
+            this.comboBoxTipoDeServiço.Click += new System.EventHandler(this.comboBoxTipoDeServiço_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -235,5 +239,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerDataLimpeza;
         private System.Windows.Forms.Button buttonCriarLimpezas;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogFicheiroTexto;
     }
 }

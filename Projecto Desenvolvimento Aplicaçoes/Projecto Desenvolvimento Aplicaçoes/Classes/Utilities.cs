@@ -5,12 +5,17 @@ namespace Projecto_Desenvolvimento_Aplicaçoes.Classes
 {
     public static class Utilities
     {
-        public static bool ValidateInt(string Number, int neededLength)
+        public static bool ValidateInt(string Number, int neededLength,int maxvalue)
         {
             bool IsValid = true;
 
             if (Regex.IsMatch(Number, "^[0-9]*$") && Number.Length == neededLength)
             {
+
+            }
+            else if(Regex.IsMatch(Number, "^[0-9]*$") && Number.Length <= maxvalue)
+            {
+               
             }
             else
             {
